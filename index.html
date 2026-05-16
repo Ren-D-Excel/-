@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Jasa Excel Automation & Dashboard</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body{
+      font-family: 'Inter', sans-serif;
+    }
+
+    .hero-bg{
+      background:
+      radial-gradient(circle at top left, rgba(37,99,235,0.35), transparent 30%),
+      radial-gradient(circle at bottom right, rgba(34,197,94,0.20), transparent 30%),
+      #0f172a;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .floating{
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    @keyframes floating{
+      0%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(-10px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <h1 class="text-2xl font-extrabold text-green-600">
+        Excel Automation
+      </h1>
+
+      <a href="https://wa.me/6283863570939"
+        class="bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-xl font-semibold transition">
+        Konsultasi Gratis
+      </a>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-24">
+
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Left -->
+      <div>
+
+        <span class="bg-green-500/20 text-green-300 px-4 py-2 rounded-full text-sm">
+          Jasa Excel Profesional
+        </span>
+
+        <h1 class="text-5xl lg:text-6xl font-extrabold text-white leading-tight mt-6">
+          Excel Anda Masih Manual & Ribet?
+        </h1>
+
+        <p class="text-slate-300 text-lg leading-relaxed mt-6">
+          Kami membantu merapikan dan mengotomatisasi pekerjaan Excel menggunakan VBA Macro, Dashboard, Formula, dan Reporting otomatis.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-10">
+
+          <a href="https://wa.me/6283863570939"
+            class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl transition">
+            Chat WhatsApp
+          </a>
+
+          <a href="#portfolio"
+            class="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-semibold transition">
+            Lihat Portfolio
+          </a>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-6 mt-14">
+
+          <div>
+            <h2 class="text-3xl font-bold text-white">100+</h2>
+            <p class="text-slate-400 mt-2">
+              Formula Excel
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-bold text-white">50+</h2>
+            <p class="text-slate-400 mt-2">
+              Dashboard
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-3xl font-bold text-white">80%</h2>
+            <p class="text-slate-400 mt-2">
+              Hemat Waktu
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+      <div class="relative floating">
+
+        <div class="glass rounded-3xl p-4 shadow-2xl">
+
+          <img
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+            class="rounded-2xl"
+            alt="Excel Dashboard"
+          >
+
+        </div>
+
+        <!-- Floating Card -->
+        <div class="absolute -bottom-6 -left-6 glass p-5 rounded-2xl shadow-xl">
+
+          <p class="text-green-400 font-bold">
+            ✔ VBA Automation
+          </p>
+
+          <p class="text-slate-300 text-sm mt-2">
+            Proses laporan otomatis hanya 1 klik
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Problem -->
+  <section class="py-24 bg-slate-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center">
+
+        <h2 class="text-4xl font-extrabold">
+          Masalah yang Sering Terjadi di Excel
+        </h2>
+
+        <p class="text-slate-500 mt-4">
+          Banyak pekerjaan Excel masih dilakukan manual dan memakan waktu
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+
+          <div class="text-4xl">
+            📄
+          </div>
+
+          <h3 class="text-xl font-bold mt-4">
+            Input Manual
+          </h3>
+
+          <p class="text-slate-500 mt-3">
+            Input data berulang setiap hari membuat pekerjaan lambat.
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+
+          <div class="text-4xl">
+            ⚠️
+          </div>
+
+          <h3 class="text-xl font-bold mt-4">
+            Rumus Error
+          </h3>
+
+          <p class="text-slate-500 mt-3">
+            Formula kompleks sering error dan sulit diperbaiki.
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+
+          <div class="text-4xl">
+            🐌
+          </div>
+
+          <h3 class="text-xl font-bold mt-4">
+            File Berat
+          </h3>
+
+          <p class="text-slate-500 mt-3">
+            Workbook besar membuat Excel menjadi lambat.
+          </p>
+
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+
+          <div class="text-4xl">
+            ⏰
+          </div>
+
+          <h3 class="text-xl font-bold mt-4">
+            Deadline
+          </h3>
+
+          <p class="text-slate-500 mt-3">
+            Pembuatan laporan terlalu lama dan tidak efisien.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Services -->
+  <section class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center">
+
+        <h2 class="text-4xl font-extrabold">
+          Layanan Excel
+        </h2>
+
+        <p class="text-slate-500 mt-4">
+          Fokus pada automation dan reporting berbasis Microsoft Excel
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-7 mt-16">
+
+        <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
+
+          <div class="text-4xl">
+            ⚙️
+          </div>
+
+          <h3 class="text-2xl font-bold mt-5">
+            VBA Macro
+          </h3>
+
+          <p class="text-slate-500 mt-4">
+            Automasi proses kerja Excel menggunakan VBA.
+          </p>
+
+        </div>
+
+        <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
+
+          <div class="text-4xl">
+            📊
+          </div>
+
+          <h3 class="text-2xl font-bold mt-5">
+            Dashboard
+          </h3>
+
+          <p class="text-slate-500 mt-4">
+            Dashboard Excel interaktif dan profesional.
+          </p>
+
+        </div>
+
+        <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
+
+          <div class="text-4xl">
+            🧮
+          </div>
+
+          <h3 class="text-2xl font-bold mt-5">
+            Formula Excel
+          </h3>
+
+          <p class="text-slate-500 mt-4">
+            Pembuatan formula dan optimasi workbook.
+          </p>
+
+        </div>
+
+        <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
+
+          <div class="text-4xl">
+            📁
+          </div>
+
+          <h3 class="text-2xl font-bold mt-5">
+            Reporting
+          </h3>
+
+          <p class="text-slate-500 mt-4">
+            Pembuatan laporan otomatis dan lebih rapi.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-24 bg-slate-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center">
+
+        <h2 class="text-4xl font-extrabold">
+          Contoh Dashboard Excel
+        </h2>
+
+        <p class="text-slate-500 mt-4">
+          Tampilan dashboard dan reporting berbasis Excel
+        </p>
+
+      </div>
+
+	<div class="grid lg:grid-cols-3 gap-8 mt-16">
+
+	  <img
+    		src="images/dashboard1.png"
+    		class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
+  	>
+
+	  <img
+    		src="images/dashboard2.png"
+    		class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
+  	>
+
+	<img
+          src="images/dashboard3.png"
+          class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
+        >
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 hero-bg">
+
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h2 class="text-5xl font-extrabold text-white leading-tight">
+        Butuh Bantuan Excel?
+      </h2>
+
+      <p class="text-slate-300 text-lg mt-6">
+        Konsultasikan kebutuhan dashboard, formula, VBA Macro, dan automation Excel Anda sekarang juga.
+      </p>
+
+      <a href="https://wa.me/6283863570939"
+        class="inline-block mt-10 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl transition">
+        Konsultasi via WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-8 text-center">
+
+    <p>
+      © 2026 Jasa Excel Automation
+    </p>
+
+  </footer>
+
+</body>
+</html>
