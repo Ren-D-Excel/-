@@ -14,8 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
+
     body{
       font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
     }
 
     .hero-bg{
@@ -46,6 +48,22 @@
         transform: translateY(0px);
       }
     }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:scale(0.9);
+      }
+      to{
+        opacity:1;
+        transform:scale(1);
+      }
+    }
+
+    .animate-fade{
+      animation: fadeIn 0.3s ease;
+    }
+
   </style>
 
 </head>
@@ -61,8 +79,10 @@
         Excel Automation
       </h1>
 
-      <a href="https://wa.me/6283863570939"
-        class="bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-xl font-semibold transition">
+      <a
+        href="https://wa.me/6283863570939"
+        class="bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-xl font-semibold transition shadow-lg"
+      >
         Konsultasi Gratis
       </a>
 
@@ -83,7 +103,7 @@
         </span>
 
         <h1 class="text-5xl lg:text-6xl font-extrabold text-white leading-tight mt-6">
-          Excel Anda Masih Manual & Ribet?
+          Pekerjaan Excel Masih Manual & Memakan Waktu?
         </h1>
 
         <p class="text-slate-300 text-lg leading-relaxed mt-6">
@@ -92,13 +112,17 @@
 
         <div class="flex flex-wrap gap-4 mt-10">
 
-          <a href="https://wa.me/6283863570939"
-            class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl transition">
+          <a
+            href="https://wa.me/6283863570939"
+            class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl font-bold shadow-xl transition hover:scale-105"
+          >
             Chat WhatsApp
           </a>
 
-          <a href="#portfolio"
-            class="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-semibold transition">
+          <a
+            href="#portfolio"
+            class="border border-white/20 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-semibold transition"
+          >
             Lihat Portfolio
           </a>
 
@@ -183,27 +207,23 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
 
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            📄
-          </div>
+          <div class="text-4xl">📄</div>
 
           <h3 class="text-xl font-bold mt-4">
-            Input Manual
+            Data berantakan dan sulit dianalisa
           </h3>
 
           <p class="text-slate-500 mt-3">
-            Input data berulang setiap hari membuat pekerjaan lambat.
+            Sulit menganalisa data menjadi tidak bisa mengambil sebuah keputusan.
           </p>
 
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            ⚠️
-          </div>
+          <div class="text-4xl">⚠️</div>
 
           <h3 class="text-xl font-bold mt-4">
             Rumus Error
@@ -215,11 +235,9 @@
 
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            🐌
-          </div>
+          <div class="text-4xl">🐌</div>
 
           <h3 class="text-xl font-bold mt-4">
             File Berat
@@ -231,11 +249,9 @@
 
         </div>
 
-        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-xl transition">
+        <div class="bg-white p-8 rounded-3xl shadow-sm hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            ⏰
-          </div>
+          <div class="text-4xl">⏰</div>
 
           <h3 class="text-xl font-bold mt-4">
             Deadline
@@ -274,9 +290,7 @@
 
         <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            ⚙️
-          </div>
+          <div class="text-4xl">⚙️</div>
 
           <h3 class="text-2xl font-bold mt-5">
             VBA Macro
@@ -290,9 +304,7 @@
 
         <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            📊
-          </div>
+          <div class="text-4xl">📊</div>
 
           <h3 class="text-2xl font-bold mt-5">
             Dashboard
@@ -306,9 +318,7 @@
 
         <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            🧮
-          </div>
+          <div class="text-4xl">🧮</div>
 
           <h3 class="text-2xl font-bold mt-5">
             Formula Excel
@@ -322,16 +332,14 @@
 
         <div class="border border-slate-200 rounded-3xl p-8 hover:shadow-2xl transition">
 
-          <div class="text-4xl">
-            📁
-          </div>
+          <div class="text-4xl">📁</div>
 
           <h3 class="text-2xl font-bold mt-5">
-            Reporting
+            Analisa & Pengolahan Data
           </h3>
 
           <p class="text-slate-500 mt-4">
-            Pembuatan laporan otomatis dan lebih rapi.
+            Mengolah data menjadi informasi yang lebih mudah dibaca.
           </p>
 
         </div>
@@ -354,29 +362,32 @@
         </h2>
 
         <p class="text-slate-500 mt-4">
-          Tampilan dashboard dan reporting berbasis Excel
+          Klik gambar untuk memperbesar tampilan
         </p>
 
       </div>
 
-	<div class="grid lg:grid-cols-3 gap-8 mt-16">
+      <div class="grid lg:grid-cols-3 gap-8 mt-16">
 
-	  <img
-    		src="images/d1.png"
-    		class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
-  	>
-
-	  <img
-    		src="images/d2.png"
-    		class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
-  	>
-
-	<img
-          src="images/d3.png"
-          class="rounded-3xl shadow-xl hover:scale-105 transition duration-300"
+        <img
+          src="images/d1.png"
+          onclick="openModal(this.src)"
+          class="rounded-3xl shadow-xl hover:scale-105 hover:-translate-y-2 transition duration-300 cursor-pointer object-cover w-full"
         >
 
-</div>
+        <img
+          src="images/d2.png"
+          onclick="openModal(this.src)"
+          class="rounded-3xl shadow-xl hover:scale-105 hover:-translate-y-2 transition duration-300 cursor-pointer object-cover w-full"
+        >
+
+        <img
+          src="images/d3.png"
+          onclick="openModal(this.src)"
+          class="rounded-3xl shadow-xl hover:scale-105 hover:-translate-y-2 transition duration-300 cursor-pointer object-cover w-full"
+        >
+
+      </div>
 
     </div>
 
@@ -395,8 +406,10 @@
         Konsultasikan kebutuhan dashboard, formula, VBA Macro, dan automation Excel Anda sekarang juga.
       </p>
 
-      <a href="https://wa.me/6283863570939"
-        class="inline-block mt-10 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl transition">
+      <a
+        href="https://wa.me/6283863570939"
+        class="inline-block mt-10 bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-2xl font-bold text-lg shadow-2xl transition hover:scale-105"
+      >
         Konsultasi via WhatsApp
       </a>
 
@@ -412,6 +425,69 @@
     </p>
 
   </footer>
+
+  <!-- IMAGE MODAL -->
+  <div
+    id="imageModal"
+    class="fixed inset-0 bg-black/90 backdrop-blur-sm hidden items-center justify-center z-50 p-6"
+    onclick="closeModal()"
+  >
+
+    <!-- Close -->
+    <button
+      class="absolute top-5 right-8 text-white text-5xl font-bold hover:text-red-400 transition"
+    >
+      &times;
+    </button>
+
+    <!-- Image -->
+    <img
+      id="modalImage"
+      class="max-w-6xl max-h-[90vh] rounded-3xl shadow-2xl animate-fade"
+    >
+
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/6283863570939"
+    class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-full shadow-2xl z-50 font-bold transition hover:scale-110"
+  >
+    WhatsApp
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+
+    function openModal(src){
+
+      document
+        .getElementById("imageModal")
+        .classList.remove("hidden");
+
+      document
+        .getElementById("imageModal")
+        .classList.add("flex");
+
+      document
+        .getElementById("modalImage")
+        .src = src;
+
+    }
+
+    function closeModal(){
+
+      document
+        .getElementById("imageModal")
+        .classList.add("hidden");
+
+      document
+        .getElementById("imageModal")
+        .classList.remove("flex");
+
+    }
+
+  </script>
 
 </body>
 </html>
